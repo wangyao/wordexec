@@ -1,5 +1,5 @@
 # wordexec
-php word 
+本项目是一个php处理word模版的demo, 后面会持续迭代。 
 
 
 # 测试方法
