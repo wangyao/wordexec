@@ -20,3 +20,8 @@ $router->get('/test', [
     'uses' => 'ExampleController@test',
 ]);
 
+$router->get('/test2', [
+    'as' => 'test2',
+    'uses' => 'MergeFileController@test2',
+]);
+
