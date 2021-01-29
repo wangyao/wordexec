@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use PhpOffice\PhpWord;
 use PhpOffice\PhpWord\Exception\CopyFileException;
 use PhpOffice\PhpWord\Exception\CreateTemporaryFileException;
 use PhpOffice\PhpWord\Exception\Exception;
@@ -34,7 +33,6 @@ class ExampleController extends Controller
         // 声明模板象并读取模板内容
         try {
             $templateProcessor = new TemplateProcessor($path);
-
 
             // 页眉页脚
             $templateProcessor->setValue('WBPXXXXX', 'WBP10028');  // 乙方
@@ -112,6 +110,4 @@ class ExampleController extends Controller
 
         }
     }
-
-
 }
