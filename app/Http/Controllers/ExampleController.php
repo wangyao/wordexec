@@ -35,6 +35,12 @@ class ExampleController extends Controller
         try {
             $templateProcessor = new TemplateProcessor($path);
 
+
+            // 页眉页脚
+            $templateProcessor->setValue('WBPXXXXX', 'WBP10028');  // 乙方
+            $templateProcessor->setValue('YYYY-A001/A002/A003', '2021-A005/A006/A007');  // 乙方
+            $templateProcessor->setValue('thankyou', '测试1');  // 乙方
+
             // 替换模板内容
             $templateProcessor->setValue('title1', '测试1');  // 乙方
             $templateProcessor->setValue('title2', '测试2');  // 乙方
